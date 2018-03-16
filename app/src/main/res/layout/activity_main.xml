@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="crystal.somewhere.MainActivity">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/Map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.amap.api.maps.MapView>
+
+    <!-- ICONS EXPANDABLE SELECTOR -->
+
+    <com.karumi.expandableselector.ExpandableSelector
+        android:id="@+id/es_icons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:background="@xml/bg_expandable_selector_dark"/>
+
+    <crystal.somewhere.MoveImageView
+        android:id="@+id/food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:visibility="gone"
+        android:src="@drawable/food"/>
+
+    <crystal.somewhere.MoveImageView
+        android:id="@+id/trip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="115dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="18dp"
+        android:visibility="gone"
+        android:src="@drawable/trip"/>
+
+    <crystal.somewhere.MoveImageView
+        android:id="@+id/mall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="162dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="18dp"
+        android:visibility="gone"
+        android:src="@drawable/mall"/>
+
+    <crystal.somewhere.MoveImageView
+        android:id="@+id/other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="210dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="18dp"
+        android:visibility="gone"
+        android:src="@drawable/other"/>
+
+</RelativeLayout>

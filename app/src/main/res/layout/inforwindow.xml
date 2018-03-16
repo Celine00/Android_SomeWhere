@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="100dp"
+    android:background="#0000">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="@drawable/inforwindow_bg">
+        <ImageView
+            android:id="@+id/info_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/flag"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/place_name_hint"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/description_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/place_description_hint"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 用来偏移inforwindow的位置-->
+    <TextView
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SomeWhere</string>
+    <string name="infor_name">添加地点</string>
+    <string name="place_type">类别</string>
+    <string name="place_name">地名</string>
+    <string name="place_description">描述</string>
+    <string name="place_name_hint">我的标记</string>
+    <string name="place_description_hint">我的描述</string>
+    <string name="save">保存</string>
+    <string name="delete">删除</string>
+    <string name="context_menu">Context menu</string>
+    <string name="search_hint">请输入搜索内容</string>
+    <string name="search">搜索</string>
+
+    <plurals name="likes_count">
+        <item quantity="one">%d like</item>
+        <item quantity="other">%d likes</item>
+    </plurals>
+    <string name="user_profile_photo">http://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/929118_455075441302693_1605108410_a.jpg</string>
+</resources>

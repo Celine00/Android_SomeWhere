@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="crystal.somewhere.DetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="@color/land"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:fitsSystemWindows="true"
+            app:title=" "
+            app:theme="@style/AppTheme.AppBarOverlay"
+            android:background="@color/gray">
+
+            <ImageView
+                android:id="@+id/cover_page"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sea"
+                app:layout_collapseMode="parallax"
+                android:clickable="true"/>
+
+            <EditText
+                android:id="@+id/et_new_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_gravity="bottom"
+                android:textSize="@dimen/text_size_14"
+                android:textColor="@color/white"
+                android:background="@null"
+                app:layout_collapseMode="parallax"
+                android:editable="false"/>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_new"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:theme="@style/AppTheme.AppBarOverlay"
+                android:popupTheme="@style/AppTheme.PopupOverlay">
+                <EditText
+                    android:id="@+id/et_new_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:background="@null"
+                    android:editable="false"/>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <include layout="@layout/tags_and_content"/>
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

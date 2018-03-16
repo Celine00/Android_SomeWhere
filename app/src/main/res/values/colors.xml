@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#F0F0F0</color>
+
+    <color name="land">#309EBA</color>
+    <color name="water">#FBEFBB</color>
+    <color name="road">#D4B882</color>
+    <color name="button">#F0F0F0</color>
+
+    <color name="red">#309EBA</color>
+    <color name="lightInk">#AFB0AE</color>
+    <color name="ink">#2F2745</color>
+
+    <color name="color_bg_selected">#F0F0F0</color>
+    <!--color name="color_bg_selected">#e0301e</color-->
+    <color name="green">#9BCD9B</color>
+    <color name="color_bg_normal">#e7e7e8</color>
+    <color name="color_text_normal">#000000</color>
+    <color name="bgBackSideColor">#f4f0ff</color>
+    <color name="contentDividerLine">#e0e0e0</color>
+    <color name="contentBadgeTitle">#a9a9a9</color>
+    <color name="titleBadgeTitle">#adafb1</color>
+    <color name="mainTextColor">#343d43</color>
+
+    <color name="style_color_primary">#2d5d82</color>
+    <color name="style_color_primary_dark">#21425d</color>
+    <color name="style_color_accent">#01bcd5</color>
+
+    <color name="fab_color_pressed">#007787</color>
+    <color name="fab_color_shadow">#44000000</color>
+
+    <color name="btn_default_light_normal">#00000000</color>
+    <color name="btn_default_light_pressed">#40ffffff</color>
+
+    <color name="btn_send_normal">#02c754</color>
+    <color name="btn_send_pressed">#006633</color>
+    <color name="btn_default_shadow">#99000000</color>
+    <color name="btn_context_menu_pressed">#40000000</color>
+    <color name="btn_context_menu_text_red">#ffff0000</color>
+
+    <color name="text_like_counter">#2b5a83</color>
+
+</resources>

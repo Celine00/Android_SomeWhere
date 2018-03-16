@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:background="@xml/frame">
+
+    <!-- content header line -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@xml/content_bgtop"
+        android:paddingBottom="7dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="7dp">
+
+        <ImageView
+            android:id="@+id/content_coverPage"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <!-- content header image -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/head_image"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:scaleType="centerCrop"
+            android:paddingBottom="10dp"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+    <!-- content body layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="6dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="9dp">
+
+        <!-- avatar and name part -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/content_avatar_title"
+                style="@style/ContentMainBadgeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="5dp"
+                android:text="Place Info" />
+
+            <ImageView
+                android:id="@+id/content_typeImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/content_avatar_title"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/trip" />
+
+            <TextView
+                android:id="@+id/content_placeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/content_avatar_title"
+                android:layout_marginBottom="2dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/content_typeImg"
+                android:text="Place name"
+                android:textColor="@color/mainTextColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/content_typeName"
+                style="@style/TitleBadgeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/content_placeName"
+                android:layout_alignStart="@id/content_placeName"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="TypeName" />
+
+            <com.zhy.view.flowlayout.TagFlowLayout
+                android:id="@+id/content_flowlayout"
+                style="@style/TitleBadgeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/content_placeName"
+                android:layout_alignStart="@id/content_placeName"
+                android:layout_marginTop="30dp"
+                app:max_select="-1"/>
+            <!--<ImageView-->
+                <!--android:id="@+id/goToButton"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:src="@drawable/down_arrow" />-->
+
+        </RelativeLayout>
+
+        <!-- divider line -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="9dp"
+            android:src="@color/contentDividerLine" />
+
+        <!-- addresses part -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/content_from_badge"
+                    style="@style/ContentMainBadgeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Place Description" />
+
+                <TextView
+                    android:id="@+id/content_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/content_from_badge"
+                    android:layout_below="@id/content_from_badge"
+                    android:text="=====这里是Place的详情====="
+                    android:textSize="16sp"
+                    android:textColor="@color/mainTextColor"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!-- divider line -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="7dp"
+            android:src="@color/contentDividerLine" />
+
+    </LinearLayout>
+
+</LinearLayout>
